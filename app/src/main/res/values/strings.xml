@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nasna</string>
+    <string name="title_activity_map">Map</string>
+    <string name="api_key">AIzaSyAcnU6DnwEW-3g8BlrcPb9bZIpJp-KaolI</string>
+</resources>

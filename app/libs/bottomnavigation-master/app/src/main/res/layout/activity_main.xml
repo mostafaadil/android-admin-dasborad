@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.ss.bottomnavsample.activities.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Select Bottom Navigation Style:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/button_defaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Default Style"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_sStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Sstyle "
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_defaultStyle_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Default Style 3 Tab"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_sStyle_fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sstyle Fixed 3 Tab"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

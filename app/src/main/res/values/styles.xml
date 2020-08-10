@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextField">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/text_field</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textColorHint">@color/colorBorder</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BottomNavigationTabStyle">
+        <item name="tab_text_color">@color/colorPrimary</item>
+        <item name="unselected_tab_text_color">@color/unselectedIconColor</item>
+    </style>
+
+    <style name="FontTextView">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textColorHint">@color/colorBorder</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="Button" parent="android:Widget.Material.Button.Borderless" tools:ignore="NewApi" tools:targetApi="lollipop">
+       <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">13.3dp</item>
+    </style>
+
+    <style name="Card">
+        <item name="cardBackgroundColor">@color/colorBackground</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardElevation">20dp</item>
+    </style>
+
+</resources>

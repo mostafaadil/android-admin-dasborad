@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavigationBackground"
+    tools:context=".activity.AuthenticationActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/register"
+        style="@style/Card"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_colored_logo" />
+
+            <io.nasna.app.fonts.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_user"
+                android:hint="اسم المستخدم"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp" />
+
+
+            <io.nasna.app.fonts.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_lock"
+                android:hint=" كلمة المرور"
+                android:textColorHint="@color/colorBorder"
+
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_store"
+                android:hint="  اسم المتجر"
+                android:textColorHint="@color/colorBorder"
+                style="@style/TextField"
+
+
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_message"
+                android:hint="البريد الالكتروني"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                style="@style/TextField"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                style="@style/TextField"
+
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_suitcase"
+                android:hint="رقم هوية التاجر"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_place"
+                android:hint="موقع المتجر"
+                android:onClick="getLocation"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints,OnClick"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+
+            <io.nasna.app.fonts.FontEditText
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:text=" كلمة المرور"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <io.nasna.app.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="  الشروط والاحكام "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+
+                <io.nasna.app.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="بالمتابعة انت توافق "
+                    android:textColor="#80A4B8C4"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login"
+        style="@style/Card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        app:cardBackgroundColor="@color/colorBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_colored_logo" />
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_user"
+                android:hint="اسم المستخدم"
+                android:textColorHint="@color/colorBorder"
+
+                android:textSize="14dp" />
+
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_lock"
+                android:hint=" كلمة المرور"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontButton
+                style="?android:attr/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:onClick="LoginMeIn"
+                android:text=" كلمة المرور"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,OnClick"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <io.nasna.app.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="  الشروط والاحكام "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+
+
+                <io.nasna.app.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="بالمتابعة انت توافق "
+                    android:textColor="#80A4B8C4"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/navigation_main_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941">
+
+        <io.nasna.app.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="showRegisterUi"
+            android:text="أنشئ حساب "
+            android:textColor="@color/texttow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="OnClick" />
+
+
+        <io.nasna.app.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="showLiginUi"
+            android:text="سجل الدخول "
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.836"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="DuplicateIds,OnClick" />
+    </android.support.constraint.ConstraintLayout>
+
+    <io.nasna.app.fonts.FontTextView
+        android:id="@+id/fontTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="الشروط والأحكام"
+        android:textColor="@color/texttow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:onClick="openTerms"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fontTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="OnClick"></LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

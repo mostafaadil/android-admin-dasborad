@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <io.nasna.app.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=" اسم البرنامج"
+                android:textColor="#000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_corner_radius"
+                android:backgroundTint="@color/colorBorder"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fontTextView"
+                app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/background_corner_radius"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <io.nasna.app.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="المدة الزمنية"
+                android:textColor="@color/colorBorder"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="23dp"
+
+        android:background="@drawable/navigation_background"
+        android:backgroundTint="#1f3572"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <io.nasna.app.fonts.FontTextView
+            android:id="@+id/fontTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:text="ادارة ولاء  المستخدمين "
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/fontTextView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.714"
+            tools:ignore="RtlCompat" />
+
+
+        <io.nasna.app.fonts.FontButton
+            android:id="@+id/fontButton"
+            style="@style/Button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button"
+            android:text="بالزمن"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fontTextView12"
+            app:layout_constraintTop_toBottomOf="@+id/fontTextView7"
+            app:layout_constraintVertical_bias="0.263"
+            tools:ignore="MissingConstraints" />
+
+
+        <io.nasna.app.fonts.FontTextView
+            android:id="@+id/fontTextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="بعدد المعاملات"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fontTextView2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <io.nasna.app.fonts.FontTextView
+        android:id="@+id/fontTextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="الإعــدادت"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        style="@style/Card"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="12dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/fontButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_user"
+                android:hint="إسم المنتج"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp" />
+
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_lock"
+                android:hint="  عدد المستخدمين"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_store"
+                android:hint="نسبة الخصم"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <io.nasna.app.fonts.FontEditText
+                style="@style/TextField"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/ic_message"
+                android:hint="البريد"
+                android:textColorHint="@color/colorBorder"
+                android:textSize="14dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <io.nasna.app.fonts.FontButton
+        android:id="@+id/fontButton3"
+        style="@style/Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="إضافة"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.734"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
